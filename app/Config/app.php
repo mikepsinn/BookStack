@@ -123,6 +123,8 @@ return [
         BookStack\Providers\RouteServiceProvider::class,
         BookStack\Providers\CustomFacadeProvider::class,
         BookStack\Providers\CustomValidationServiceProvider::class,
+
+        Barryvdh\Debugbar\ServiceProvider::class,
     ],
 
     /*
@@ -186,6 +188,8 @@ return [
         'Activity' => BookStack\Facades\Activity::class,
         'Permissions' => BookStack\Facades\Permissions::class,
         'Theme'    => BookStack\Facades\Theme::class,
+
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
     // Proxy configuration

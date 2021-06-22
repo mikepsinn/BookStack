@@ -129,5 +129,6 @@ return [
      // DebugBar route domain
      // By default DebugBar route served from the same domain that request served.
      // To override default domain, specify it as a non-empty value.
-    'route_domain' => env('APP_URL', '') === 'http://bookstack.dev' ? '' : env('APP_URL', ''),
+    // You have to comment this line to get it to work with port 8083
+    //'route_domain' => env('APP_URL', '') === 'http://bookstack.dev' ? '' : env('APP_URL', ''),
 ];
